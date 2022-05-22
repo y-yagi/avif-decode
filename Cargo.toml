@@ -21,11 +21,12 @@ aom-decode = "0.2.1"
 rgb = "0.8.31"
 yuv = "0.1.4"
 num_cpus = "1.13.1"
-avif-parse = "1.0.0"
+avif-parse = { git = "https://github.com/y-yagi/avif-parse", branch = "support-mif1-brand", version = "1.0.0" }
 quick-error = "2.0.1"
 imgref = "1.9.1"
 owning_ref = "0.4.1"
 lodepng = { version = "3.5.2", optional = false }
+cmake = "=0.1.45"
 
 [features]
 default = ["binary"]

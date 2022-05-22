@@ -44,6 +44,7 @@ version = "0.2.2"
 dependencies = [
  "aom-decode",
  "avif-parse 1.0.0",
+ "cmake",
  "imgref",
  "lodepng",
  "num_cpus",
@@ -69,8 +70,7 @@ dependencies = [
 [[package]]
 name = "avif-parse"
 version = "1.0.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "87fb3f9afbbb9f71ae53da13771284895f51c6acc77cfb3571ab966780250dee"
+source = "git+https://github.com/y-yagi/avif-parse?branch=support-mif1-brand#59588cbc5593ef309b759412ff779bc6fa4b06af"
 dependencies = [
  "bitreader",
  "byteorder",
@@ -114,9 +114,9 @@ checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
 
 [[package]]
 name = "cmake"
-version = "0.1.48"
+version = "0.1.45"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e8ad8cef104ac57b68b89df3208164d228503abbdce70f6880ffa3d970e7443a"
+checksum = "eb6210b637171dfba4cda12e579ac6dc73f5165ad56133e5d72ef3131f320855"
 dependencies = [
  "cc",
 ]
